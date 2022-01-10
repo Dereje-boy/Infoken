@@ -1,0 +1,426 @@
+.Bottom-container {
+    background-color: #ffffff;
+    flex-grow: 30;
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+}
+.left-bottom {
+    display: flex;
+    flex-grow: 30;
+    margin-right: 300px;
+    flex-direction: column;
+    padding: 5px 10px 10px 20px;
+}
+
+.left-bottom .search-filter {
+    position: fixed;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 40px;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 10;
+}
+
+.search-bar{
+    font-size: 15px;
+}
+
+.databases-container{
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0);
+    flex-direction: column;
+    display: none;
+    z-index: 10;
+    border: 1px solid blue;
+}
+
+.databases-container:hover{
+    background-color: black;
+}
+
+.databases-container button{
+    background-color: wheat;
+    color: blue;
+    font-size: 15px;
+    border: 3px solid wheat;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    outline: none;
+    margin: 5px;
+}
+.databases-container button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.search-filter input[type=text] {
+    width: 50%;
+    flex-grow: 2;
+    margin-left: 30px;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 20px;
+    font-family: "Cambria Math", serif;
+    font-weight: 300;
+    border-radius: 10px;
+    outline: none;
+    border: 3px solid #22c014;
+}
+
+.search-filter input:focus {
+    outline: none;
+    border: 3px solid blue;
+    background-color: #ffffff;
+}
+
+.search-by{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.select-Container{
+    display: flex;
+    flex-direction: row;
+}
+.select-Container select{
+    font-size: 20px;
+    padding: 5px 0 5px 10px;
+    margin: 2px 20px 2px 5px;
+    background-color: white;
+    border: 0px solid blue;
+    outline: none;
+
+}
+select:hover{
+    background-color: #efeeec;
+    cursor: pointer;
+}
+
+select option{
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.return-button{
+    margin: 0 10px 0 10px;
+    width: 100px;
+    border-radius: 10px;
+    border: none #ead5d5;
+    color: blue;
+    font-size: 18px;
+    background-color: white;
+}
+
+.return-button:hover {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.return-button:active, .refresh-button:active {
+    background-color: white;
+    color: black;
+}
+
+.refresh-button img{
+    width: 40px;
+    height: 40px;
+}
+.refresh-button{
+    background-color: white ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.refresh-button:hover{
+    background-color: darkgreen;
+    cursor: pointer;
+}
+.refresh-button:active{
+    background-color: white;
+    cursor: pointer;
+}
+
+.search_button, .databases {
+    background-color: #cae0f1;
+    outline: none;
+    border: 1px solid white;
+    margin: 2px;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.databases {
+    height: auto;
+    color: black;
+    padding: 10px;
+    font-size: 15px;
+    width: 200px;
+}
+
+.search_button img {
+    width: 25px;
+    height: auto;
+    padding: 2px;
+    outline: none;
+    border: none;
+}
+
+.search_button:hover, .databases:hover{
+    background-color: #4faaea;
+    border-color: #4faaea;
+    cursor: pointer;
+}
+
+
+.search_button:active, .databases:active {
+    background-color: #017afc;
+}
+
+.table-container {
+    display: block;
+    padding: 5px;
+    max-height: 100vmin;
+    width: 100%;
+    height: 100vw;
+    margin-bottom: 70px;
+    margin-top: 10px;
+}
+table {
+    width: 100vw;
+    border-collapse: collapse;
+    font-family: "Cambria Math", Arial, Helvetica, sans-serif;
+}
+.table , .book-table{
+    height: auto;
+    border: 1px dashed blue;
+    width: 100%;
+    margin: 2px;
+    padding-bottom: 100px;
+}
+
+table, tr, td, th {
+    border: 2px solid #f9e5e5;
+    padding: 10px;
+}
+
+th {
+    background-color: #003e06;
+    color: white;
+    font-weight: bolder;
+    position: relative;
+    left: 0;
+    right: 0;
+}
+
+tr {
+    color: black;
+    font-size: 10px;
+}
+
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 15px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    cursor: pointer;
+    background-color: #84fc84;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+}
+
+table tr:active{
+    background-color: black;
+    color: white;
+}
+
+.notification-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding:  60px 30px 10px 30px;
+}
+.notification-container button{
+    width: 20px;
+    height: 20px;
+    flex-grow: 5;
+    background-color: white;
+}
+.notification{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70%;
+    flex-grow: 90;
+}
+.notification img{
+    width: 20px;
+    height: 20px;
+    margin: 5px 30px;
+}
+.notification p{
+    color: black;
+    font-size: 20px;
+}
+
+.right-bottom {
+    position: fixed;
+    right: 0;
+    height: 650px;
+    display: flex;
+    width: 300px;
+    margin: 10px 0 0 0 ;
+    flex-direction: column;
+    padding: 5px 0px 10px 0px;
+    border: 0.5px solid gray;
+    z-index: 15;
+}
+
+.right-bottom .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 30px 0;
+}
+
+.top button {
+    width: 70%;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.right-bottom .info-from-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-grow: 5;
+    width: 100%;
+    z-index: 15;
+}
+
+.info-from-table input{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 230px;
+    margin: 0 20px 5px 20px;
+    padding: 10px 10px 10px 30px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    font-weight: bolder;
+    font-family: Cambria, serif;
+    color: blue;
+}
+
+.info-from-table div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info-from-table div h3{
+    padding-left: 20px;
+    width: 100%;
+    text-align: left;
+    color: green;
+    font-size: 15px;
+}
+
+.info-from-table .buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 5px;
+
+}
+.info-from-table .buttons button{
+    width: auto;
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+    margin: 10px 10px 0 0;
+}
+
+.info-from-table .info-box{
+    width: 100%;
+}
+.info-from-table .info-box h1{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.new {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    bottom: 10px;
+    left: 20px;
+    right: 20px;
+    width: 100vm;
+    z-index: 20;
+    margin-right: 300px;
+}
+
+.new button {
+    width: 150px;
+    height: 40px;
+    border-color: #ffffff;
+    color: white;
+    background-color: #042570;
+    border-radius: 20px;
+    border-color: rgba(88,255,10,0);
+    font-size: 15px;
+}
+
+.new button:hover {
+    background-color: #0a54ff;
+    cursor: pointer;
+}
+
+.new button:active {
+    background-color: white;
+    color: black;
+    border-color:black;
+}

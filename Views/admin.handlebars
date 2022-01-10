@@ -1,0 +1,209 @@
+<link rel="stylesheet" href="/styles/admin.css">
+<link rel="stylesheet" href="/styles/admin_bottom.css">
+<link rel="stylesheet" href="/styles/admin/message_container.css">
+<div class="Admin-container">
+    <div class="Top-container">
+        <a class="left-top" href="/">
+            <img src="/Images/Stages%20and%20others/infoken%20Logo.jpg">
+            Infoken App
+        </a>
+        <div class="right-top">
+            <div class="admin-names">
+                <h1 style="color: blue">{{admin_username}}</h1>
+                <h2>{{admin_fullname}}</h2>
+            </div>
+            <img class="admin-photo"
+                 src="/Images/People%20Face%20Photo/face%204.jpg">
+            <div class="logout-container">
+                <a href="logout">
+                    <h1>Logout</h1>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="Bottom-container">
+        <div class="left-bottom">
+            <div class="search-filter">
+                <div class="show-database-container">
+                    <button class="databases">Show Databases</button>
+                    <div class="databases-container">
+                        <button class="students-button">Students</button>
+                        <button class="books-button">Books</button>
+                        <button class="rents-button">Rents</button>
+                        <button class="admins-button">Admins</button>
+                    </div>
+                </div>
+
+                <input class="search-bar" type="text" placeholder="searching for students.....">
+                <div class="search-by">
+
+                    <div class="select-Container">
+                        <select name="search-by" class="Select-Search-By">
+                            <option value="Firstname">Firstname</option>
+                            <option value="Lastname">Lastname</option>
+                            <option value="Student ID">Student ID</option>
+                            <option value="Department">Department</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="search_button">
+                    <img src="/Images/search.png">
+                </button>
+                <button class="return-button">
+                    Return
+                </button>
+                <button class="refresh-button">
+                    <img src="/Images/refresh.png">
+                </button>
+            </div>
+
+            <div class="table-container">
+
+                <div class="notification-container">
+                    <div class="notification">
+                        <img src="/Images/refresh.png">
+                        <p>The table is loaded successfully</p>
+                    </div>
+                    <button>X</button>
+                </div>
+
+                <table class="table">
+                    <tr>
+                        <!--                        <th>No.</th>-->
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Student ID</th>
+                        <th>Department</th>
+                        <th>Gender</th>
+                        <th>Dorm</th>
+                        <th>Phone Number</th>
+                    </tr>
+
+                    {{#each students}}
+                        <tr>
+                            <!--                            <td>{{_id}}</td>-->
+                            <td>{{firstname}}</td>
+                            <td>{{lastname}}</td>
+                            <td>{{studentID}}</td>
+                            <td>{{department}}</td>
+                            <td>{{gender}}</td>
+                            <td>{{dorm}}</td>
+                            <td>{{phoneNumber}}</td>
+                        </tr>
+                    {{/each}}
+
+                </table>
+
+            </div>
+            <div class="new">
+                <form action="/students/new" method="get">
+                    <button class="new-student">
+                        <h3>New Student</h3>
+                    </button>
+                </form>
+                <form action="/books/new">
+                    <button class="new-book">
+                        <h3>New Book</h3>
+                    </button>
+                </form>
+                <form action="/rents/new">
+                    <button class="new-rent">
+                        <h3>New Rent</h3>
+                    </button>
+                </form>
+                <form action="/admin/new">
+                    <button class="new-admin">
+                        <h3>New Admin</h3>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+        <div class="right-bottom">
+
+            <div class="info-from-table">
+                <div class="firstname">
+                    <h3>Firstname</h3>
+                    <input type="text" name="firstname"
+                           autocomplete="off" readonly>
+                </div>
+                <div class="lastname">
+                    <h3>Lastname</h3>
+                    <input type="text" name="lastname"
+                           autocomplete="off" readonly>
+                </div>
+                <div class="studentID">
+                    <h3>StudentID</h3>
+                    <input type="text" name="studentID"
+                           autocomplete="off" readonly>
+                </div>
+                <div class="department">
+                    <h3>Department</h3>
+                    <input type="text" name="department"
+                           autocomplete="off" readonly>
+                </div>
+                <div class="gender">
+                    <h3>Gender</h3>
+                    <input type="text" name="gender"
+                           autocomplete="off" readonly>
+                </div>
+                <div class="dorm">
+                    <h3>Dorm</h3>
+                    <input type="text" name="dorm - 110" autocomplete="off" readonly>
+                </div>
+                <div class="phoneNumber">
+                    <h3>Phone Number</h3>
+                    <input type="tel" name="phoneNumber"
+                           autocomplete="off" readonly>
+                </div>
+                <div class="buttons">
+                    <button class="edit-mode-button">Edit Mode is OFF</button>
+                    <button class="delete-student-button" disabled>Delete</button>
+                    <button class="update-student-button" disabled>Update</button>
+                </div>
+                <div class="info-box">
+                    <h1 class="info-h1"></h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="message-container">
+        <div class="message-box">
+            <div class="top">
+                <div class="top-left">
+                    <h3 class="sub-heading">Loading....</h3>
+                </div>
+                <div class="top-right">
+                    <button class="button-close-message">X</button>
+                </div>
+
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    <img src="/images/refresh.png">
+                </div>
+
+                <div class="right">
+                    <p class="main-message">
+                        Loading the student table.
+                        The student data will be loaded and
+                        rendered on the student table.
+                        Thank you.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="/scripts/admin/admin.js"></script>
+<script src="/scripts/admin/adminTables.js"></script>
+<script src="/scripts/admin/changeTable.js"></script>
+<script src="/scripts/admin/changeTables.js"></script>
+<script src="/scripts/admin/updateDelete.js"></script>
+<script src="/scripts/admin/adminCalc.js"></script>
+<script src="/scripts/admin/message_box.js"></script>
+<script src="/scripts/admin/searchButton.js"></script>

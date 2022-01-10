@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: none;
+}
+
+footer {
+    display: none;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    background-color: firebrick;
+}
+
+.newAdmin-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.Top-container {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+}
+
+.left-top {
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+    margin: 10px;
+
+}
+
+.left-top img {
+    width: 60px;
+    height: auto;
+}
+
+.left-top div {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    padding: 0 0 0 30px;
+}
+
+.right-top {
+    flex-grow: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 50px 0 0px;
+    align-items: center;
+    height: 100%;
+}
+
+.admin-names {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 0 0;
+}
+
+.admin-names h1, .admin-names h2 {
+    color: black;
+    margin-top: 10px;
+}
+
+.admin-photo {
+    height: 100%;
+    width: auto;
+    border-radius: 70px
+}
+
+.rent-container {
+    background-color: wheat;
+    margin-top: 210px;
+    /*margin-top: 165px;*/
+    padding-top: 40px;
+    flex-grow: 1;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: margin-top 1s;
+}
+
+.rent-message {
+    position: fixed;
+    display: flex;
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    top: 80px;
+    background-color: white;
+    z-index: 100;
+}
+
+.rent-message h1 {
+    color: blue;
+    width: auto;
+    padding-left: 10px;
+    z-index: 100;
+}
+.rent-message button img {
+    width: 30px;
+    height: 30px;
+    padding: 0 20px 0 0;
+    z-index: 100;
+}
+
+.rent-message button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+    outline: none;
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: white;
+    width: 170px;
+    height: 50px;
+    z-index: 100;
+}
+
+.rent-message button:hover {
+    background-color: lightgray;
+    color: black;
+    cursor: pointer;
+}
+
+.rent-message button:active {
+    background-color: #f9e5e5;
+    color: black;
+}
+
+.notification {
+    position: fixed;
+    top: 140px;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: #177217;
+    transition: top 1s;
+}
+
+.notification img {
+    height: 60px;
+    margin-right: 30px;
+    border: 1px solid green;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.notification div {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.notification-messages h2, .notification-messages h3 {
+    color: white;
+}
+
+.show-hidden-message{
+    position: fixed;
+    top: 140px;
+    width: 100%;
+    z-index: 100;
+    height: 20px;
+    background-color: white;
+    padding: 2px;
+    outline: none;
+    border: none;
+}
+.show-hidden-message:hover{
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.rent {
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: 1fr 10fr;
+    grid-column-gap: 30px;
+    justify-content: center;
+    height: 100%;
+    align-items: start;
+}
+
+.top-rent {
+    width: 100%;
+}
+
+.bottom-rent {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.select-book, .select-student {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    grid-column-gap: 30px;
+    justify-content: flex-start;
+    height: 100%;
+    align-items: start;
+}
+
+.select-student img, .select-book img{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    outline: none;
+}
+button{
+    background: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+    border-bottom: 2px solid blue;
+}
+
+.search-student, .search-book {
+    background-color: white;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 30px 0 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+select{
+    font-size: 20px;
+    padding: 5px 0 5px 10px;
+    margin: 2px 20px 2px 5px;
+    background-color: white;
+    border: 0px solid blue;
+    outline: none;
+
+}
+select:hover{
+    border-bottom: 2px solid blue;
+    cursor: pointer;
+}
+
+select option{
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.search-student input,
+.search-book input {
+    height: 100%;
+    flex-grow: 10;
+    margin-right: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 5px 10px 5px 15px;
+    color: black;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-family: "Cambria Math", Arial, Helvetica, sans-serif;
+}
+
+.student-search-input, .book-search-input{
+    transition: border-bottom-width 2s;
+    transition: border-bottom-color 2s;
+    transition: border-radius 1s;
+    border-bottom: 0px solid blue;
+}
+
+.student-search-input:hover , .book-search-input:hover{
+    width: 30%;
+    border-radius: 0;
+    border-bottom: 2px solid blue;
+}
+
+.book-search-input:focus, .student-search-input:focus{
+    border-radius: 0px;
+    border-bottom: 2px solid blue;
+}
+
+
+.student-table, .book-table {
+    padding: 10px;
+}
+
+
+table, tr, th, td {
+    border-collapse: collapse;
+    border: 2px solid #ffffff;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    font-family: "Cambria Math", Arial, Helvetica, sans-serif;
+}
+
+th {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bolder;
+    position: relative;
+    left: 0;
+    right: 0;
+}
+
+tr {
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+tr:hover {
+    background-color: white;
+    color: blue;
+}
+
+table input[type='radio'] {
+    width: 100px;
+    height: 25px;
+}

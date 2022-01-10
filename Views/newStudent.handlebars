@@ -1,0 +1,60 @@
+<div class="newStudent-container">
+    <div class="Top-container">
+        <div class="left-top">
+            <img src="/Images/Stages%20and%20others/infoken%20Logo.jpg">
+            <div>
+                <h1>Infoken App</h1>
+            </div>
+        </div>
+        <div class="right-top">
+            <div class="admin-names">
+                <h1 style="color: blue">{{admin_username}}</h1>
+                <h2>{{admin_fullname}}</h2>
+            </div>
+            <img class="admin-photo"
+                 src="/Images/People%20Face%20Photo/face%204.jpg">
+        </div>
+    </div>
+    <div class="form-container">
+
+        <h1>Adding new Student</h1>
+        <h2 style="color: green;">{{firstname}}</h2>
+
+        <form class="newStudent-form" action="/students/added" method="post">
+
+            <label for="firstname">Firstname *</label>
+            <input type="text" placeholder="Abebe" name="firstname">
+
+            <label for="lastname">Lastname *</label>
+            <input type="text" placeholder="Kebede" name="lastname">
+
+            <label for="studentID">Student ID *</label>
+            <input type="text" placeholder="Ramit/377/10" name="studentID">
+
+            <label for="department">Department *</label>
+            <input type="text" placeholder="Surveying" name="department">
+
+            <label for="gender">Gender *</label>
+            <select name="gender">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+
+            <label for="dorm">Dorm *</label>
+            <input type="text" placeholder="Block NB-2 213" name="dorm">
+
+            <label for="phoneNumber">Phone No. </label>
+            <input type="tel" placeholder="0911223344" name="phoneNumber">
+
+            <input type="submit" value="Submit">
+
+        </form>
+        <a href="../admin">
+            <h1>Back to Admin</h1>
+        </a>
+
+    </div>
+
+
+</div>
+<link rel="stylesheet" href="/Styles/newStudent.css">

@@ -1,0 +1,153 @@
+footer{
+    display: none;
+}
+.Login-Mother{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Login-bkg-img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.Login-container{
+    z-index: 100;
+    width: 500px;
+    height: 400px;
+    background-color: rgba(225, 225, 225, 0.89);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px 0 20px;
+    border-radius: 20px;
+    border: 20px solid #e1e1e1;
+}
+.Login-Title{
+    font-size: 40px;
+    color: blue;
+    font-weight: bolder;
+    padding: 5px 20px 20px 20px;
+    width: 100%;
+    text-align: center;
+}
+.email-password-form, form{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+}
+.email-password-form label{
+    font-size: 25px;
+    padding: 5px;
+    margin-top: 20px;
+    font-weight: bolder;
+    height: 50px;
+}
+.email-password-form input{
+    height: 50px;
+    font-size: 25px;
+    padding: 5px 5px 5px 20px;
+    margin-top: 10px;
+    font-weight: bolder;
+    border: 3px solid  #e1e1e1;
+    outline: none;
+    border-radius: 15px;
+    font-family: "Cambria Math", serif;
+    margin-left: 20px;
+}
+.email-password-form input:focus{
+    border-color: blue;
+    color: blue;
+    border-radius: 8px;
+}
+.email-password-form input[type=submit]{
+    padding: 5px;
+    margin: 5px;
+}
+.email-password-form input[type=submit]:hover{
+    cursor: pointer;
+    background-color: #2e9fd9;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.email-password-form input[type=submit]:active{
+    background-color: white;
+    color: black;
+}
+
+.Info-container{
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 0 10px 0  ;
+    height: 40px;
+}
+.Info-container p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    display: none;
+}
+
+.Forgot-container{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin: 10px;
+
+
+}
+.Forgot-container button{
+    font-size: 20px;
+    color: blue;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 5px 0 5px 0;
+    background-color: rgba(225, 225, 225, 0);
+    text-decoration: none;
+}
+.Forgot-container button:hover{
+    color: green;
+}
+
+.Login-Button-Container{
+    flex-grow: 2;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Login-Button-Container button{
+    font-size: 35px;
+    background-color: blue;
+    color: white;
+    padding: 8px 20px 8px 20px;
+    border: 2px solid #7474e2;
+    border-radius: 10px;
+}
+.Login-Button-Container button:hover{
+    background-color: #0018ba;
+    padding: 8px 30px 8px 30px;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Login-Button-Container button:active{
+    background-color: white;
+    color: blue;
+}
+.Login-Button-Container button{
+    /*outline: none;*/
+    outline-color: white;
+}

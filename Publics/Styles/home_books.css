@@ -1,0 +1,85 @@
+.Infoken-Books {
+    margin-top: 30px;
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-top: 10px solid black;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.Infoken-Books h1 {
+    font-size: 35px;
+    font-weight: bolder;
+    color: black;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.Infoken-Books .books {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    /*width: 100%;*/
+}
+
+.one-book {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: blue;
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+
+.one-book h1 {
+    font-size: 25px;
+    color: darkgreen;
+}
+
+.one-book img {
+    width: 120px;
+    height: auto;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.one-book:hover {
+    background-color: #b6c0e8;
+    border-color: #ffffff;
+    color: #005e77;
+}
+
+@media (max-width: 1068px) {
+
+    .Infoken-Books{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .Infoken-Books .books{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .books a {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+}

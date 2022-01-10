@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/Styles/Login.css">
+
+<div class="Login-Mother">
+    <img class="Login-bkg-img" src="/Images/3.jpg">
+    <div class="Login-container">
+        <div class="Login-Title">Log in</div>
+        <h1 style="color: red;">{{message}}</h1>
+        <div>
+            <form class="email-password-form" action="login" method="post">
+
+                <label for="email-input">Email</label>
+                <input class="email-input" type="email" name="email" value="">
+
+                <label class="password-label" for="password-input">
+                    Password
+                </label>
+                <input class="password-input" type="password" name="password" value="">
+                <input type="submit" value="Submit">
+            </form>
+
+            <div class="Forgot-container">
+                <button>Forgot Password?</button>
+            </div>
+            <div class="Info-container">
+                <p>Please enter your email and password then click
+                    Login button to enter admin account</p>
+            </div>
+            <div class="Login-Button-Container">
+                <button >Log in</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="/Scripts/Login.js"></script>

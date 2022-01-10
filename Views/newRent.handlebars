@@ -1,0 +1,117 @@
+<link rel="stylesheet" href="/Styles/newRent.css">
+<title>New Rent</title>
+<div class="newAdmin-container">
+    <div class="Top-container">
+        <div class="left-top">
+            <img src="/Images/Stages%20and%20others/infoken%20Logo.jpg">
+            <div>
+                <h1>Infoken App</h1>
+            </div>
+        </div>
+        <div class="right-top">
+            <div class="admin-names">
+                <h1 style="color: blue">{{admin_username}}</h1>
+                <h2>{{admin_fullname}}</h2>
+            </div>
+            <img class="admin-photo"
+                 src="/Images/People%20Face%20Photo/face%204.jpg">
+        </div>
+    </div>
+
+    <div class="rent-container">
+        <div class="rent-message">
+            <h1 class="student-name">Student name</h1>
+            <h1 style="color: green">Rents</h1>
+            <h1 class="book-name">Book Title</h1>
+            <button class="button-rent">
+                <img src="/Images/search.png">
+                <h1>Rent</h1>
+            </button>
+        </div>
+        <button class="show-hidden-message">show hidden message</button>
+        <div class="rent">
+            <div class="top-rent">
+
+                <div class="notification">
+                    <img class="notification-image" src="/images/refresh.png">
+                    <div class="notification-messages">
+                        <h2 class="isSuccessfull" style="color: green"></h2>
+                        <h3 class="reason"></h3>
+                        <h3 class="recommendation"></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-rent">
+
+                <div class="select-student">
+                    <div class="search-student">
+                        <input type="text" class="student-search-input" placeholder="search students...">
+                        <select name="student-search-by" class="student-search-by">
+                            <option value="Firstname">Firstname</option>
+                            <option value="lastname">Lastname</option>
+                            <option value="studentID">Student ID</option>
+                            <option value="department">Department</option>
+                        </select>
+                        <button class="student-search-button">
+                            <img src="/Images/search.png">
+                        </button>
+                    </div>
+                    <div class="student-table">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Check</th>
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                                <th>Department</th>
+                                <th>Student ID</th>
+                                <th>Dorm</th>
+                                <th>Phone Number</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="select-book">
+                    <div class="search-book">
+                        <input type="text" class="book-search-input" placeholder="search books ...">
+                        <select name="book-search-by" class="book-search-by">
+                            <option value="title">Title</option>
+                            <option value="category">Category</option>
+                            <option value="author">Author</option>
+                        </select>
+                        <button class="search-book-button">
+                            <img src="/Images/search.png">
+                        </button>
+                    </div>
+                    <div class="book-table">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Check</th>
+                                <th>Title</th>
+                                <th>Category</th>
+                                <th>Author</th>
+                                <th>Quantity</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<script src="/Scripts/newRent.js"></script>
+<script src="/Scripts/rent/newRent.js"></script>

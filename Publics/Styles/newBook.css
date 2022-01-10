@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: none;
+}
+footer{
+    display: none;
+}
+section{
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    background-color: firebrick;
+}
+.newBook-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+.Top-container{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+}
+.left-top{
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+    margin: 10px;
+
+}
+.left-top img{
+    width: 60px;
+    height: auto;
+}
+.left-top div{
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    padding: 0 0 0 30px;
+}
+.right-top{
+    flex-grow: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 50px 0 0px;
+    align-items: center;
+    height: 100%;
+}
+.admin-names{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 0 0;
+}
+.admin-names h1, .admin-names h2{
+    color: black;
+    margin-top: 10px;
+}
+.admin-photo{
+    height: 100%;
+    width: auto;
+    border-radius: 70px
+}
+
+.form-container{
+    background-color: wheat;
+    margin-top: 80px;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.form-container a{
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    border:  1px solid wheat;
+    border-radius: 20px;
+}
+.form-container a:hover{
+    background-color: #2b54ec;
+    color: black;
+}
+
+.form-container a h1{
+    color: white;
+}
+.form-container h1{
+    color: blue;
+    font-size: 30px;
+}
+.form-container form{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-row-gap: 20px;
+
+}
+.newStudent-form label{
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.newStudent-form input{
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border:  3px solid white;
+    font-weight: bolder;
+    width: 100%;
+}
+.newStudent-form input[type="submit"]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: none white;
+}
+.newStudent-form input[type="submit"]:hover{
+    background-color: #d6d6df;
+    color: black;
+    cursor: pointer;
+}

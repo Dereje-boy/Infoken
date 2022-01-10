@@ -1,0 +1,128 @@
+
+.message-container {
+    position: fixed;
+    bottom: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+
+    animation-name: hide_message_container;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes hide_message_container {
+    /*from{bottom: 80px}*/
+    /*to{bottom: -230px;}*/
+
+    5%{bottom: 90px}
+    10%{bottom: 100px}
+    20%{bottom: 80px}
+    30%{bottom: 70px}
+    40%{bottom: 60px}
+    50%{bottom: 50px}
+    60%{bottom: 40px}
+    70%{bottom: 30px}
+    80%{bottom: 20px}
+    90%{bottom: 10px}
+    100%{bottom: -200px}
+
+}
+
+.message-box {
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid green;
+    width: 600px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.message-box .top {
+    width: 100%;
+    flex-grow: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    border-bottom: 1px solid green;
+
+}
+.top-left{
+    flex-grow: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 20px;
+}
+.top-right{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    flex-grow: 2;
+    padding-bottom: 10px;
+}
+
+.message-box .top button {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid red;
+    border-radius: 3px;
+}
+
+.message-box .top button:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.message-box .bottom {
+    display: flex;
+    width: 100%;
+    flex-grow: 50;
+    flex-direction: row;
+}
+
+.message-box .bottom .left {
+    display: flex;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid green;
+}
+
+.left img {
+    width: 40px;
+    height: 40px;
+}
+
+.message-box .bottom .right {
+    display: flex;
+    width: 450px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px 10px 5px 10px;
+}
+
+.right h3 {
+    margin-bottom: 5px;
+}
+.right p{
+    font-size: 20px;
+    font-family: "Cambria Math", serif;
+}

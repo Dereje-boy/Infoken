@@ -1,0 +1,7 @@
+POST http://localhost:3000/studentAdded
+Content-Type: application/x-www-form-urlencoded
+
+id=99&content=new-element
+
+###
+http://localhost:3000
